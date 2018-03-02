@@ -9,6 +9,7 @@ var userIP = require('../userIP.json');
 var defaultUserData = require('../defaultUserData.json');
 
 var ipIndex = userData.ipIndex;
+var loginStatus = userData.loginStatus;
 
 function addMediaHTML(){};
 
@@ -21,7 +22,6 @@ exports.view = function(req, res) {
   {
     console.log(wholeUserData[i]);
   }
-  var loginStatus = userData.loginStatus;
 
   console.log("User is loggeed in: " + loginStatus);
 
@@ -230,7 +230,7 @@ exports.getWholeUserData = function()
 
 exports.getLoginStatus = function()
 {
-  return userData.loginStatus;
+  return loginStatus;
 }
 
 exports.updateUserData = function(usrData)
