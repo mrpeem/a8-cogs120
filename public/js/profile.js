@@ -10,7 +10,7 @@ socket.once('cock', function(userData)
 //gets loginStatus directly from app.js to avoid asynchronicity shit
 socket.once('loginStatus', function(signedIn)
 {
-  alert("LOGIN STATUS = "+signedIn);
+  //alert("LOGIN STATUS = "+signedIn);
   if (!signedIn) 
   {
     $(".profile").attr({
