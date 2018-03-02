@@ -94,7 +94,7 @@ a {
 
 .page-box {
   margin: auto 1rem;
-
+  border: 1px solid #DFDFDF;
 }
 
 .page-box input {

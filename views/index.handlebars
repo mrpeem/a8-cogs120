@@ -1,7 +1,7 @@
 {{>header}}
 
 </head>
-<body>
+<body onload="getIP()">
 
 {{>searchbar}}
 
@@ -39,7 +39,7 @@
 			<div class="categories-button">
 				<a href="/app/random">
 					<div class="categories">
-						Random
+						Random <img src="/images/icons/random-100.png" alt="random play icon" height="70">
 					</div>
 				</a>
 
@@ -47,7 +47,7 @@
 					{{#each dataTypeList}}
 						<a href="/app/{{title}}/filteredRandom">
 							<div id="{{title}}" class="categories">
-								{{dataType}} 
+								{{dataType}} <img src="/images/icons/random-100.png" alt="random play icon" height="70">
 							</div>
 						</a>
 					{{/each}}
