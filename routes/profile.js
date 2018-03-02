@@ -13,10 +13,10 @@ var loginStatus = userData.loginStatus;
 
 function addMediaHTML(){};
 
-exports.cock = function()
+/*exports.cock = function()
 {
   return userData;
-}
+}*/
 
 //-----------------------------------------------
 //---------------------VIEW()--------------------

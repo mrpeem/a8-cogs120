@@ -19,12 +19,12 @@ socket.once('loginStatus', function(signedIn)
   }
 });
 
-socket.once('cock', function(userData)
+/*socket.once('cock', function(userData)
 {
 	alert(userData);
 	alert(userData.email);
 	alert(userData.loginStatus);
-});
+});*/
 
 function logout()
 {
