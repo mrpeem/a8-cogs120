@@ -5,14 +5,14 @@ var defaultUserData = require('../defaultUserData.json');
 var ipAddress, ipIndex;
 
 
-http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) 
+/*http.get({'host': 'api.ipify.org', 'port': 80, 'path': '/'}, function(resp) 
 {
   resp.on('data', function(ip) 
   {
     console.log("ip = "+ip);
     ipAddress = ip;
   });
-});
+});*/
 
 exports.getIP = function()
 {
