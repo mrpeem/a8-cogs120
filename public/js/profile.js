@@ -3,7 +3,7 @@ var socket = io.connect('https://a8-cogs120team2.herokuapp.com/');
 //gets loginStatus directly from app.js to avoid asynchronicity shit
 socket.once('loginStatus', function(signedIn)
 {
-	//console.log("LOGIN STATUS = "+signedIn);
+  alert("LOGIN STATUS = "+signedIn);
   if (!signedIn) 
   {
     $(".profile").attr({
@@ -11,7 +11,7 @@ socket.once('loginStatus', function(signedIn)
       "data-target": "#profile_popup",
       "href" : "/profile"
     });
-    //alert("!signedIN");
+    alert("!signedIN");
   }
   else
   {
