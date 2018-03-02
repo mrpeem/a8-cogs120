@@ -13,10 +13,6 @@ var loginStatus = userData.loginStatus;
 
 function addMediaHTML(){};
 
-exports.cock = function()
-{
-  return userData;
-}
 
 //-----------------------------------------------
 //---------------------VIEW()--------------------
@@ -237,6 +233,12 @@ exports.getLoginStatus = function()
 {
   return loginStatus;
 }
+
+exports.cock = function()
+{
+  return userData;
+}
+
 
 exports.updateUserData = function(usrData)
 {
