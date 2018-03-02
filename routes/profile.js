@@ -163,7 +163,7 @@ function populateUserData(userIdNumber) {
   userData = JSON.parse(JSON.stringify(wholeUserData[userIdNumber]));
   userData["currentPageViewed"] = null;
   userData["currentCategorySelected"] = null;
-  userData["loginStatus"] = true;
+  //userData["loginStatus"] = true;
   userData["ipIndex"] = ipIndex;
 }
 
