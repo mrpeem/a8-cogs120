@@ -13,6 +13,11 @@ var loginStatus = userData.loginStatus;
 
 function addMediaHTML(){};
 
+exports.cock = function()
+{
+  return userData;
+}
+
 //-----------------------------------------------
 //---------------------VIEW()--------------------
 //-----------------------------------------------
@@ -163,7 +168,7 @@ function populateUserData(userIdNumber) {
   userData = JSON.parse(JSON.stringify(wholeUserData[userIdNumber]));
   userData["currentPageViewed"] = null;
   userData["currentCategorySelected"] = null;
-  //userData["loginStatus"] = true;
+  userData["loginStatus"] = true;
   userData["ipIndex"] = ipIndex;
 }
 
