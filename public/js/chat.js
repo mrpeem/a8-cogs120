@@ -1,5 +1,7 @@
 //for testing
-var socket = io.connect('http://localhost:3000');
+//var socket = io.connect('http://localhost:3000');
+var socket = io.connect('https://a8-cogs120team2.herokuapp.com');
+
 //for deploying
 //var socket = io.connect('https://a7-cogs120team2.herokuapp.com');
 
