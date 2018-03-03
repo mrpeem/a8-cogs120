@@ -1,12 +1,9 @@
-  //var socket = io.connect('http://localhost:3000');
-var socket = io.connect('https://a8-cogs120team2.herokuapp.com/');
+var socket = io.connect('http://localhost:3000');
+//var socket = io.connect('https://a8-cogs120team2.herokuapp.com/');
 
 
-//gets loginStatus directly from app.js to avoid asynchronicity shit
-socket.once('lol', function(signedIn, signedIn1)
+function checkLoginStatus(signedIn)
 {
-  alert("LOGIN STATUS = "+signedIn);
-  alert("cock = "+signedIn1);
   if (!signedIn) 
   {
     $(".profile").attr({
@@ -14,13 +11,13 @@ socket.once('lol', function(signedIn, signedIn1)
       "data-target": "#profile_popup",
       "href" : "/profile"
     });
-    alert("!signedIN");
   }
   else
   {
-  	$(".profile").attr("href", "/profile");    
+    $(".profile").attr("href", "/profile");    
   }
-});
+};
+
 
 
 

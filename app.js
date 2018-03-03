@@ -108,11 +108,6 @@ var rooms = ['room1', 'room2', 'room3'];
 
 io.sockets.on('connection', function(socket){
   console.log('a user connected');
-  console.log("IN app.js; IP = "+require("./routes/ip.js").getIP());
-
-  //print out ip address
-  require("./routes/ip.js").getIP();
-
 
   socket.on('addUser', function(username){
     socket.username = username;
@@ -187,6 +182,8 @@ io.sockets.on('connection', function(socket){
   socket.on('logout', function()
   {
     profile.logout();
+    updateUserData( profile.getUserData() );
+
   });
 
 
@@ -244,10 +241,7 @@ var routeFiles = [];
 fs.readdirSync('./routes/').forEach(file =>
 {
   var fileName = file.substring(0, file.length-3); //removes ".js"
-  if (fileName != "profile")
-  {
-    routeFiles.push( require('./routes/'+fileName) );
-  }
+  routeFiles.push( require('./routes/'+fileName) );
 });
 
 //manually update userData in every route files
