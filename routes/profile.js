@@ -135,6 +135,8 @@ exports.register = function(email, password, userName, img, actualName)
   wholeUserData.push(JSON.parse(JSON.stringify(newUser)));
   populateUserData(id); 
 
+  console.log("REGISTER");
+
   return true;
 }
 
