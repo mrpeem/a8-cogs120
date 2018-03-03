@@ -228,7 +228,7 @@ exports.getWholeUserData = function()
 {
   return wholeUserData;
 }
-]
+
 
 exports.updateUserData = function(usrData)
 {
