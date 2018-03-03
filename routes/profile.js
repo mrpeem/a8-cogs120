@@ -234,7 +234,7 @@ exports.getLoginStatus = function()
   return loginStatus;
 }
 
-exports.cock = function()
+exports.getLoginStatus1 = function()
 {
   return loginStatus;
 }
