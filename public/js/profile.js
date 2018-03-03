@@ -6,7 +6,7 @@ var socket = io.connect('https://a8-cogs120team2.herokuapp.com/');
 socket.once('loginStatus', function(signedIn, cock)
 {
   alert("LOGIN STATUS = "+signedIn);
-  alert("cock = "+cock.toString());
+  alert("cock = "+cock);
   if (!signedIn) 
   {
     $(".profile").attr({
