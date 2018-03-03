@@ -228,20 +228,7 @@ exports.getWholeUserData = function()
 {
   return wholeUserData;
 }
-
-exports.getLoginStatus = function()
-{
-   console.log("IN GETLOGINSTATUS; THE RETURN VALUE IS "+loginStatus);
-
-  return false;
-}
-
-exports.getLoginStatus1 = function()
-{
-  console.log("IN GETLOGINSTATUS; THE RETURN VALUE IS "+loginStatus);
-  return false;
-}
-
+]
 
 exports.updateUserData = function(usrData)
 {
