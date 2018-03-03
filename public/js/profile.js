@@ -6,7 +6,6 @@ var socket = io.connect('https://a8-cogs120team2.herokuapp.com/');
 socket.once('loginStatus', function(signedIn, signedIn1)
 {
   alert("LOGIN STATUS = "+signedIn.loginStatus);
-  alert("fuck = "+signedIn.email);
   alert("cock = "+signedIn1);
   if (!signedIn) 
   {

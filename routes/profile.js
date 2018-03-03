@@ -236,7 +236,7 @@ exports.getLoginStatus = function()
 
 exports.getLoginStatus1 = function()
 {
-  return userData;
+  return userData.loginStatus;
 }
 
 
