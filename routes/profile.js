@@ -236,7 +236,8 @@ exports.getLoginStatus = function()
 
 exports.getLoginStatus1 = function()
 {
-  return userData.loginStatus;
+  console.log("IN GETLOGINSTATUS; THE RETURN VALUE IS "+loginStatus);
+  return loginStatus;
 }
 
 
