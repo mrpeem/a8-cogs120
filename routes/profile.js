@@ -236,7 +236,7 @@ exports.getLoginStatus = function()
 
 exports.cock = function()
 {
-  return userData.loginStatus;
+  return loginStatus;
 }
 
 
