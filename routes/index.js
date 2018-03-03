@@ -90,8 +90,7 @@ exports.updateUserData = function(usrData)
 
 exports.view = function(req, res) {
 
-  console.log("DEFAULT");
-  console.log(require('../defaultUserData.json'));
+  console.log("INDEX.js; userdata.loginStatus = "+userData.loginStatus);
   
   userData.currentItemIndex = 0;
   console.log(userList);

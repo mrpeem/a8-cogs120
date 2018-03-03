@@ -108,7 +108,7 @@ var rooms = ['room1', 'room2', 'room3'];
 
 io.sockets.on('connection', function(socket){
   console.log('a user connected');
-  console.log("IP = "+require("./routes/ip.js").getIP());
+  console.log("IN app.js; IP = "+require("./routes/ip.js").getIP());
 
   //print out ip address
   require("./routes/ip.js").getIP();
