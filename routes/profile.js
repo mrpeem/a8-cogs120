@@ -233,7 +233,7 @@ exports.getLoginStatus = function()
 {
    console.log("IN GETLOGINSTATUS; THE RETURN VALUE IS "+loginStatus);
 
-  return loginStatus;
+  return false;
 }
 
 exports.getLoginStatus1 = function()
