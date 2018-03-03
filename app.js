@@ -227,7 +227,6 @@ io.sockets.on('connection', function(socket){
 
 
   //sends loginStatus directly froma app.js to avoid error from asynchronicity
-  //socket.emit('loginStatus', profile.getLoginStatus1(), profile.getLoginStatus() );
 
   //console.log("app.js; loginStatus = "+profile.getLoginStatus());
 
