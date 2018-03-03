@@ -231,13 +231,15 @@ exports.getWholeUserData = function()
 
 exports.getLoginStatus = function()
 {
+   console.log("IN GETLOGINSTATUS; THE RETURN VALUE IS "+loginStatus);
+
   return loginStatus;
 }
 
 exports.getLoginStatus1 = function()
 {
   console.log("IN GETLOGINSTATUS; THE RETURN VALUE IS "+loginStatus);
-  return loginStatus;
+  return false;
 }
 
 
