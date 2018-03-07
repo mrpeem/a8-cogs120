@@ -14,7 +14,7 @@ $(document).ready(function() {
     $('.save-popup').fadeOut(2000);
   })
   $('#group-chat-send').click(function(){
-		console.log('clicked');
+		console.log('Event clicked');
 		ga("send", "event", "shareScreen", "click");
 	});
 });
